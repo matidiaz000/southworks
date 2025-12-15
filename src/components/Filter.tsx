@@ -10,14 +10,15 @@ function FilterComponent({ sendDataToParent }: any) {
   };
 
   return (
-    <>
+    <div className="mb-3">
       <input
+        className="p-3 w-full border-2 border-indigo-600 rounded-lg"
         type="text"
-        placeholder="Search items..."
+        placeholder="Buscar por nombre..."
         value={inputValue}
         onChange={handleInputChange} // Call the handler on input change
       />
-    </>
+    </div>
   )
 }
 

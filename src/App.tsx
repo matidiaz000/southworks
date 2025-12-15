@@ -32,14 +32,14 @@ function App() {
 
   if (isLoading) { // ⬅️ si está cargando, mostramos un texto que lo indique
     return (
-      <div className="App">
+      <div className="p-8">
         <h1>Cargando...</h1>
       </div>
     );
   }
 
   return (
-    <>
+    <div className='p-8'>
       <FilterComponent sendDataToParent={handleChildData}/>
       {data
       .filter((item: IItem) => item.name.toLowerCase().includes(filter.toLowerCase()))
@@ -53,7 +53,7 @@ function App() {
           />
         </div>
       ))}  
-    </>
+    </div>
   )
 }
 
